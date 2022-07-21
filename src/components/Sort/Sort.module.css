@@ -1,0 +1,17 @@
+.iconButton {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.iconButton > svg {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    .iconButton > svg {
+        width: 45px;
+        height: 45px;
+    }
+}

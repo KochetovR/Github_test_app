@@ -1,0 +1,35 @@
+.errorNotification {
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid orange;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: orange;
+
+    animation: hiddenNote 5s 0s forwards;
+}
+
+@media (min-width: 768px) {
+    .errorNotification {
+        width: 600px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .errorNotification {
+        width: 890px;
+        font-size: 50px;
+    }
+}
+
+@keyframes hiddenNote {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

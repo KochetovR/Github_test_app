@@ -1,0 +1,45 @@
+.pages {
+  margin: 20px auto;
+}
+.page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.page:first-child,
+.page:nth-child(6) {
+  margin-left: 0;
+}
+.page:nth-child(-n + 5) {
+  margin-bottom: 5px;
+}
+.page:last-child, 
+.page:nth-child(5) {
+  margin-right: 0;
+}
+.currentPage {
+    border: 2px solid gray;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .pages {
+      width: 700px;
+    }
+    .page:nth-child(-n + 5) {
+      margin-bottom: 0;
+    }
+    .page:nth-child(5) {
+      margin-right: 20px
+    }
+    .page:nth-child(6) {
+      margin-left: 20px;
+    }
+}
